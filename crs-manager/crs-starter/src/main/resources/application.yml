@@ -1,6 +1,10 @@
 server:
-  port: 8002
+  port: 8802
 spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
   shardingsphere:
     props:
       sql-show: true
@@ -49,3 +53,6 @@ spring:
 #logging:
 #  level:
 #    com.shardingsphere: debug
+feign:
+  sentinel:
+    enabled: true #打开sentinel对feign的支持

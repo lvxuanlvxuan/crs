@@ -2,6 +2,8 @@ package com.example.crs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Author: lvxuan
@@ -23,6 +25,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * ▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒
  * You are not expected to understand this
  */
+@EnableFeignClients
+@EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages = {"com.example.crs"})
 public class CrsApplication {
 

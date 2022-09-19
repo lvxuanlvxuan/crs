@@ -1,5 +1,6 @@
 package com.example.crs.web;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.example.crs.interfac.DemoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +37,7 @@ public class DemoController {
     private DemoService demoService;
 
     @GetMapping("/testQuery")
+    @SentinelResource()
     public ResponseEntity testQuery() {
         demoService.testQuery();
         return ResponseEntity.ok().build();

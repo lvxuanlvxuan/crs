@@ -1,8 +1,12 @@
-package com.example.crs.service;
+package com.example.crs.api.service;
 
 import com.example.crs.api.IDemoService;
+import com.example.crs.interfac.DemoService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @Author: lvxuan
@@ -27,8 +31,13 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController("/api-crs")
 public class IDemoServiceImpl implements IDemoService {
+
+    @Resource
+    private DemoService demoService;
+
     @Override
-    public void testDemo() {
-        log.info("testDemo");
+    public ResponseEntity testDemo() {
+        demoService.testQuery();
+        return ResponseEntity.ok().build();
     }
 }

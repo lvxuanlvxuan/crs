@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-outbusiness/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-outbusiness/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-presentation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-presentation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-vevorbusiness/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crs-manager/crs-vevorbusiness/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

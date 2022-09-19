@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for crs-manager" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../maven_repo/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../maven_repo/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../maven_repo/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar" />
+        </processorPath>
+        <module name="crs-outbusiness" />
+        <module name="crs-presentation" />
+        <module name="crs-starter" />
+        <module name="crs-domain" />
+        <module name="crs-client" />
+        <module name="crs-vevorbusiness" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crs" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="crs-client" options="" />
+      <module name="crs-domain" options="" />
+      <module name="crs-manager" options="-parameters" />
+      <module name="crs-outbusiness" options="" />
+      <module name="crs-presentation" options="" />
+      <module name="crs-starter" options="" />
+      <module name="crs-vevorbusiness" options="" />
+    </option>
+  </component>
+</project>

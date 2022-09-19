@@ -1,0 +1,5 @@
+# Project exclude paths
+/crs-manager/crs-client/target/
+/crs-manager/crs-presentation/target/
+/crs-manager/crs-starter/target/
+/crs-manager/crs-vevorbusiness/target/

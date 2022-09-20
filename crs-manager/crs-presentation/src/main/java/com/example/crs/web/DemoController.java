@@ -2,6 +2,7 @@ package com.example.crs.web;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.example.crs.interfac.DemoService;
+import com.example.crs.sentinel.block.CustomBlockHandler;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +38,7 @@ public class DemoController {
     private DemoService demoService;
 
     @GetMapping("/testQuery")
-    @SentinelResource()
+    @SentinelResource(value = "customBlockHandler", blockHandler = "blockHandler",blockHandlerClass = CustomBlockHandler.class)
     public ResponseEntity testQuery() {
         demoService.testQuery();
         return ResponseEntity.ok().build();

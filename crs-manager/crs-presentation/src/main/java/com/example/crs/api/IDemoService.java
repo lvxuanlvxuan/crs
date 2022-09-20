@@ -1,5 +1,6 @@
 package com.example.crs.api;
 
+import com.example.crs.sentinel.fallback.DemoFallBackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +25,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * ▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒
  * You are not expected to understand this
  */
-@FeignClient(value = "bmp-crs-service",contextId = "crs")
+@FeignClient(value = "bmp-crs-service", contextId = "crs", fallback = DemoFallBackService.class)
 public interface IDemoService {
 
     @GetMapping("/api-crs/testDemo")

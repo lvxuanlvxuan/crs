@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
  */
 public class CustomBlockHandler {
 
-    public ResponseEntity blockHandler() {
+    public static ResponseEntity blockHandler() {
         return new ResponseEntity("当前请求已限流", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

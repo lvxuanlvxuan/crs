@@ -21,6 +21,5 @@ package com.example.crs.interfac;
  * You are not expected to understand this
  */
 public interface DemoService {
-
     void testQuery();
 }
